@@ -6,19 +6,24 @@ import session from "express-session";
 import AuthController from "./users/auth-controller.js";
 import cors from 'cors'
 const app = express();
+
+
 app.use(
     session({
       secret: "any string",
       resave: false,
       saveUninitialized: true,
     })
-   );   
-   cors({
-    credentials: true,
-    origin: "http://localhost:3000",
-  })
- 
-app.use(cors())
+   );
+   
+app.use(
+    cors({
+      credentials: true,
+      // origin: "https://luxury-mochi-12313b.netlify.app",
+     origin : "http://localhost:3000",
+    })
+   );
+   
 app.use(express.json());
 const port = process.env.PORT || 4000;
 TuitsController(app);
@@ -26,4 +31,4 @@ HelloController(app);
 UserController(app);
 AuthController(app);
 
-app.listen(4000);
+app.listen(port);
