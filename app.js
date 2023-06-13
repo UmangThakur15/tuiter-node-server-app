@@ -19,7 +19,8 @@ app.use(
 app.use(
     cors({
       credentials: true,
-     origin : "http://localhost:3000",
+      origin: "https://a5--heartfelt-liger-ea6185.netlify.app/",
+    //  origin : "http://localhost:3000",
     })
    );
    
