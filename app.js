@@ -26,7 +26,7 @@ app.use(
 app.use(
     cors({
       credentials: true,
-      origin: "https://a5--heartfelt-liger-ea6185.netlify.app",
+      origin: "https://fastidious-dragon-93ae89.netlify.app",
     //  origin : "http://localhost:3000",
     })
    );
