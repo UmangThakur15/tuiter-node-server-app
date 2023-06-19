@@ -15,7 +15,6 @@ const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0
 
 console.log(process.env.DB_CONNECTION_STRING);
 console.log(CONNECTION_STRING);
-// const CONNECTION_STRING = "mongodb+srv://dhyeysavaliya2000:<password>@cluster0.exksxhm.mongodb.net/?retryWrites=true&w=majority"
 mongoose.connect(CONNECTION_STRING);
 
 
