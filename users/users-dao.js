@@ -1,4 +1,3 @@
-//let users = [];
 import usersModel from "./users-model.js";
 
 export const findAllUsers = () =>

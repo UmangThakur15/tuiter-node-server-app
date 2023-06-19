@@ -1,5 +1,3 @@
-// import people from './users.js'
-// let users = people
 import * as usersDao from "./users-dao.js";
 
 const UserController = (app) => {
