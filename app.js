@@ -14,6 +14,8 @@ mongoose.connect(
 );
 // mongoose.connect("mongodb://127.0.0.1:27017/tuiter-su1-23");
 
+const app = express();
+
 app.use(
     session({
       secret: "any string",
