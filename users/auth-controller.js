@@ -51,12 +51,9 @@ const AuthController = (app) => {
  
  const update   = async (req, res) => { 
     console.log('update', req.body)
-    // const username = req.body.username;
     const id = req.params.uid;
     console.log("\n\n\n ", id, req.body);
     const newUser = await usersDao.updateUser(id,req.body.user);
-    // user = usersDao.findUserByUsername(username);
-    // newUser = usersDao.findUserByCredentials(req.body.username, req.body.password);
     console.log(newUser);
     req.session["currentUser"] = newUser;
     res.json(newUser);};

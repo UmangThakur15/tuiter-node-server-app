@@ -34,7 +34,8 @@ app.use(
     cors({
       credentials: true,
     // origin : "http://localhost:3000",
-    origin: "https://fastidious-dragon-93ae89.netlify.app"
+    origin: "https://fastidious-dragon-93ae89.netlify.app",
+    mode:"no-cors"
     })
    );
    
