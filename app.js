@@ -17,6 +17,7 @@ console.log(process.env.DB_CONNECTION_STRING);
 console.log(CONNECTION_STRING);
 mongoose.connect(CONNECTION_STRING);
 
+let cors = require("cors");
 
 app.use(
     session({
