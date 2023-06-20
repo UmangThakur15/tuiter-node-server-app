@@ -17,7 +17,7 @@ console.log(process.env.DB_CONNECTION_STRING);
 console.log(CONNECTION_STRING);
 mongoose.connect(CONNECTION_STRING);
 
-let cors = require("cors");
+
 
 app.use(
     session({
@@ -36,6 +36,7 @@ app.use(
       credentials: true,
     // origin : "http://localhost:3000",
     origin: "https://fastidious-dragon-93ae89.netlify.app"
+    
     })
    );
    
